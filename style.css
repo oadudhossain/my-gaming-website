@@ -1,4 +1,12 @@
-/* Head Section  */
+/* Share Font Work Sans  */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,700&family=Open+Sans:wght@800&family=Work+Sans:wght@400;500;600;700;800&display=swap");
+* {
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Nav Section  */
 header {
   width: auto;
   height: 130px;
@@ -8,20 +16,52 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 nav img {
   width: 50px;
   height: 40px;
   margin-left: 90px;
+  margin-right: 0px;
 }
 nav h3 {
-  margin-left: 0%;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
+.g-color {
+  color: #ff42a5;
+}
+
 nav > ul {
   display: flex;
   margin-right: 90px;
+  align-items: center;
+
 }
 nav li {
   list-style: none;
-  margin-right: 30px;
+  margin-right: 40px;
 }
+nav li a {
+  text-decoration: none;
+  color: #3c354f;
+  font-size: 1rem;
+  font-weight: 500;
+  
+}
+.box {
+  
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+}
+.box li img {
+  margin: 0px;
+  width: 24px;
+  height: 24\px;
+}
+
+
