@@ -223,6 +223,8 @@ nav li a {
   flex-direction: row-reverse;
   align-items: center;
 }
+
+/* All Games Section  */
 .all-games {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -242,4 +244,76 @@ nav li a {
   height: 60px;
   border-radius: 50px;
   background: #fff;
+}
+/* Footer Section  */
+footer {
+  width: 1360px;
+  height: auto;
+  background: #0b0223;
+}
+
+.logo-title {
+  /* margin-top: 0px; */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.logo-title img {
+  width: 80px;
+  height: 40px;
+  margin-top: 50px;
+}
+.g-colors {
+  color: #ff42a5;
+}
+footer h3 {
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #fff;
+}
+
+.options ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.options a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* .social-icon {
+  display: flex;
+  width: 80px;
+  height: 40px;
+} */
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.icon {
+  width: 50px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.social-icon {
+  /* background-color: #fff; */
+  margin-top: 0px;
+}
+.last-footer {
+  /* justify-content: center;
+  align-items: center; */
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
 }
