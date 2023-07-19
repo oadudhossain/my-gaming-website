@@ -216,6 +216,30 @@ nav li a {
   width: 60%;
   height: 60%;
 }
-.play-instantly > .picture > .seond {
-}
 
+/* play-instantly-second reverse section  */
+.play-instantly-second {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.all-games {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 60px;
+  width: 1340px;
+  height: 427px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+.boxs {
+  align-items: center;
+  margin-top: 60px;
+  width: 220px;
+  height: 60px;
+  border-radius: 50px;
+  background: #fff;
+}
