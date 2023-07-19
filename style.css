@@ -1,5 +1,12 @@
 /* Share Font Work Sans  */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,700&family=Open+Sans:wght@800&family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
 * {
   font-family: "Lato", sans-serif;
   font-family: "Open Sans", sans-serif;
@@ -15,14 +22,26 @@ header {
 }
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
 nav img {
   width: 80px;
   height: 40px;
-  margin-left: 90px;
-  margin-right: 0px;
 }
 nav h3 {
   font-size: 1.8rem;
@@ -37,6 +56,14 @@ nav > ul {
   margin-right: 90px;
   align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  nav > ul {
+    flex-direction: column;
+    gap: 36px;
+  }
+}
+
 nav li {
   list-style: none;
   margin-right: 40px;
@@ -72,6 +99,19 @@ nav li a {
   justify-content: space-between;
   align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner img {
+    margin: 0;
+    width: 711px;
+    height: 446px;
+  }
+}
+
 .banner-content {
   margin-left: 90px;
 }
@@ -311,8 +351,9 @@ footer h3 {
   margin-top: 0px;
 }
 .last-footer {
-  /* justify-content: center;
-  align-items: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-size: 12px;
   font-weight: 400;
