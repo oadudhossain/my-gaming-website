@@ -118,7 +118,7 @@ nav li a {
   font-weight: 500;
   text-transform: uppercase;
 }
-.btn-secondary{
+.btn-secondary {
   border: 0px;
   text-align: center;
   width: 120px;
@@ -128,10 +128,68 @@ nav li a {
   align-items: flex-start;
   gap: 10px;
   border-radius: 25px;
-  background: #4EC5F7;
+  background: #4ec5f7;
 
   color: #fff;
   font-weight: 500;
   text-transform: uppercase;
+}
 
+/* Online Games Funny Videos */
+.online-games {
+  width: auto;
+  height: 400px;
+  margin-top: 750px;
+  text-align: center;
+}
+.funny-text {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.online-games > .title h1 {
+  color: #0b0223;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.online-games > .title p {
+  color: #534c64;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.img-container {
+  display: flex;
+}
+.first-img {
+  margin-left: 160px;
+  width: 250px;
+  height: 310px;
+}
+.second-img {
+  margin-left: 20px;
+  width: 250px;
+  height: 310px;
+}
+.third-img {
+  margin-left: 20px;
+  width: 250px;
+  height: 310px;
+}
+.forth-img {
+  margin-right: 160px;
+  margin-left: 20px;
+  width: 250px;
+  height: 310px;
+}
+.img-container p {
+  text-align: left;
+  color: #534c64;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.first-paragraph {
+  margin-left: 170px;
 }
