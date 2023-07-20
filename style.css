@@ -1,11 +1,11 @@
 /* Share Font Work Sans  */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,700&family=Open+Sans:wght@800&family=Work+Sans:wght@400;500;600;700;800&display=swap");
 
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+}
 
 * {
   font-family: "Lato", sans-serif;
@@ -15,22 +15,39 @@
 
 /* Nav Section  */
 header {
-  width: auto;
-  height: 130px;
+  width: 100%;
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
+
 nav {
+  height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+/* Responsive */
+@media screen and (max-width: 1120px) {
   nav {
     flex-direction: column;
   }
+
+  header {
+    height: auto;
+  }
 }
+@media screen and (max-width: 400px) {
+  nav {
+    flex-direction: column;
+  }
+
+  header {
+    height: auto;
+  }
+}
+
+
 
 nav .logo {
   display: flex;
@@ -57,7 +74,13 @@ nav > ul {
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1120px) {
+  nav > ul {
+    flex-direction: column;
+    gap: 36px;
+  }
+}
+@media screen and (max-width: 400px) {
   nav > ul {
     flex-direction: column;
     gap: 36px;
@@ -100,15 +123,31 @@ nav li a {
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+/* Respon */
+@media screen and (max-width: 1120px) {
   .banner {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .banner img {
     margin: 0;
     width: 711px;
     height: 446px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .banner {
+    flex-direction: column-reverse;
+  }
+
+  .banner img {
+    margin: 0;
+    width: 350px;
+    height: 416px;
+    padding-left: 50px;
+  }
+  .banner-content{
+    padding-right: 60px;
   }
 }
 
@@ -177,10 +216,10 @@ nav li a {
 
 /* Online Games Funny Videos */
 .online-games {
-  width: auto;
-  height: 400px;
-  margin-top: 750px;
+  width: 100%;
   text-align: center;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 .funny-text {
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
@@ -201,25 +240,101 @@ nav li a {
 }
 .img-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 .first-img {
-  margin-left: 160px;
   width: 250px;
   height: 310px;
 }
 .second-img {
-  margin-left: 20px;
   width: 250px;
   height: 310px;
 }
 .third-img {
-  margin-left: 20px;
   width: 250px;
   height: 310px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%),
+    url(images/Rectangle\ 7.png), rgb(21, 17, 17) 50% / cover no-repeat;
 }
+
+/* play button icon is an SVG or an image with class "play-button" */
+.img-container .third-img {
+  position: relative;
+}
+
+.img-container .third-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  /* opacity: 0; */
+  border-radius: 10px;
+  transition: opacity 0.3s;
+}
+
+.img-container .third-img:hover::before {
+  opacity: 1;
+}
+
+.img-container .third-img:hover .play-button {
+  display: block;
+}
+/* Dark overlay style */
+.img-container div {
+  position: relative;
+}
+
+.img-container div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 78%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Video play button icon */
+
+.img-container div::after {
+  content: "\f04b";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  color: #ff42a5;
+  content: "Watch Now";
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Hover effect */
+.img-container div:hover::before {
+  opacity: 1;
+}
+
+.img-container div:hover::after {
+  opacity: 1;
+}
+
+/* ----  */
+
 .forth-img {
-  margin-right: 160px;
-  margin-left: 20px;
   width: 250px;
   height: 310px;
 }
@@ -230,6 +345,18 @@ nav li a {
   font-weight: 500;
   line-height: 30px;
 }
+@media screen and (max-width: 1120px) {
+  .img-container {
+    flex-direction: column-reverse;
+  }
+@media screen and (max-width: 400px) {
+  .img-container {
+    flex-direction: column-reverse;
+  }
+
+
+
+
 .first-paragraph {
   margin-left: 170px;
 }
@@ -238,6 +365,7 @@ nav li a {
   display: flex;
   margin-top: 140px;
   gap: 200px;
+  width: 100%;
 }
 .text-content {
   text-align: right;
@@ -254,41 +382,97 @@ nav li a {
 }
 .play-instantly .picture {
   width: 60%;
-  height: 60%;
+  max-width: 780px;
+  height: 725px;
+  position: relative;
+}
+
+.play-instantly .picture .first {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 634px;
+  height: 650px;
+  object-fit: cover;
+}
+
+.play-instantly .picture .second {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 /* play-instantly-second reverse section  */
 .play-instantly-second {
+  margin-top: 120px;
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
+  gap: 200px;
+  margin-bottom: 120px;
+}
+
+.play-instantly-second .picture {
+  width: 60%;
+  max-width: 780px;
+  height: 725px;
+  position: relative;
+}
+
+.play-instantly-second .picture .first {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 634px;
+  height: 650px;
+  object-fit: cover;
+}
+
+.play-instantly-second .picture .second {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 /* All Games Section  */
 .all-games {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin-top: 60px;
-  width: 1340px;
-  height: 427px;
+  padding: 120px 0;
   background: linear-gradient(
     90deg,
     rgba(255, 66, 165, 0.03) 0%,
     rgba(255, 66, 165, 0.03) 100%
   );
 }
-.boxs {
+
+.all-games .top {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  margin-top: 60px;
-  width: 220px;
-  height: 60px;
+  gap: 27px;
+  margin-bottom: 27px;
+}
+#border-box {
+  border: 1px solid #ff42a5;
+  color: #ff42a5;
+}
+
+.all-games .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+}
+
+.boxs {
+  display: flex;
+  gap: 16px;
+  align-items: center;
   border-radius: 50px;
   background: #fff;
+  padding: 7px;
 }
 /* Footer Section  */
 footer {
-  width: 1360px;
-  height: auto;
+  width: 100%;
   background: #0b0223;
 }
 
@@ -336,7 +520,6 @@ footer h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
 }
 
@@ -347,14 +530,13 @@ footer h3 {
 }
 
 .social-icon {
-  /* background-color: #fff; */
   margin-top: 0px;
 }
 .last-footer {
   display: flex;
   justify-content: center;
-  align-items: center;
   color: white;
   font-size: 12px;
   font-weight: 400;
+  height: 120px;
 }
