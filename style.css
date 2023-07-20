@@ -47,8 +47,6 @@ nav {
   }
 }
 
-
-
 nav .logo {
   display: flex;
   align-items: center;
@@ -146,7 +144,7 @@ nav li a {
     height: 416px;
     padding-left: 50px;
   }
-  .banner-content{
+  .banner-content {
     padding-right: 60px;
   }
 }
@@ -345,17 +343,6 @@ nav li a {
   font-weight: 500;
   line-height: 30px;
 }
-@media screen and (max-width: 1120px) {
-  .img-container {
-    flex-direction: column-reverse;
-  }
-@media screen and (max-width: 400px) {
-  .img-container {
-    flex-direction: column-reverse;
-  }
-
-
-
 
 .first-paragraph {
   margin-left: 170px;
