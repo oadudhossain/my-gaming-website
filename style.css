@@ -346,6 +346,19 @@ nav li a {
 .first-paragraph {
   margin-left: 170px;
 }
+
+/* Respon */
+@media screen and (max-width: 1120px) {
+  .img-container {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 400px) {
+  .img-container {
+    flex-direction: column-reverse;
+  }
+}
+
 /* Play Instantly, No Downloads, No Installs */
 .play-instantly {
   display: flex;
@@ -392,6 +405,19 @@ nav li a {
   padding-left: 100px;
 }
 
+/* Respon */
+@media screen and (max-width: 1120px) {
+  .play-instantly {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 400px) {
+  .play-instantly {
+    flex-direction: column-reverse;
+    
+  }
+}
+
 /* play-instantly-second reverse section  */
 .play-instantly-second {
   margin-top: 120px;
@@ -422,6 +448,13 @@ nav li a {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+/* Respon */
+@media screen and (max-width: 1120px) {
+  .play-instantly {
+    flex-direction: column-reverse;
+  }
 }
 
 /* All Games Section  */
