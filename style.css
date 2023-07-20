@@ -92,8 +92,8 @@ nav li {
 nav li a {
   text-decoration: none;
   color: #3c354f;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 .box {
   display: flex;
@@ -216,8 +216,7 @@ nav li a {
 .online-games {
   width: 100%;
   text-align: center;
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding-top: 50px;
 }
 .funny-text {
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
@@ -350,15 +349,16 @@ nav li a {
 /* Play Instantly, No Downloads, No Installs */
 .play-instantly {
   display: flex;
-  margin-top: 140px;
+  margin-top: 100px;
   gap: 200px;
-  width: 100%;
 }
 .text-content {
   text-align: right;
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 60px;
+  padding-left: 200px;
+  padding-top: 200px;
 }
 .text-content p {
   color: #534c64;
@@ -368,10 +368,11 @@ nav li a {
   line-height: 30px;
 }
 .play-instantly .picture {
-  width: 60%;
-  max-width: 780px;
+  width: 62%;
+  max-width: 880px;
   height: 725px;
   position: relative;
+  padding-left: 320px;
 }
 
 .play-instantly .picture .first {
@@ -381,12 +382,14 @@ nav li a {
   width: 634px;
   height: 650px;
   object-fit: cover;
+  /* padding-left: 70px; */
 }
 
 .play-instantly .picture .second {
   position: absolute;
   left: 0;
   bottom: 0;
+  padding-left: 100px;
 }
 
 /* play-instantly-second reverse section  */
@@ -412,6 +415,7 @@ nav li a {
   width: 634px;
   height: 650px;
   object-fit: cover;
+  padding-left: 70px;
 }
 
 .play-instantly-second .picture .second {
@@ -464,15 +468,14 @@ footer {
 }
 
 .logo-title {
-  /* margin-top: 0px; */
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 .logo-title img {
+  margin-top: 8px;
   width: 80px;
   height: 40px;
-  margin-top: 50px;
 }
 .g-colors {
   color: #ff42a5;
@@ -497,12 +500,6 @@ footer h3 {
   color: #fff;
 }
 
-/* .social-icon {
-  display: flex;
-  width: 80px;
-  height: 40px;
-} */
-
 .social-icon {
   display: flex;
   justify-content: center;
@@ -523,7 +520,7 @@ footer h3 {
   display: flex;
   justify-content: center;
   color: white;
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 14px;
   height: 120px;
+  padding-top: 20px;
 }
